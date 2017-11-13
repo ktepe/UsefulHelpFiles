@@ -33,3 +33,9 @@ Path planning related:
 https://www.researchgate.net/publication/267596342_Path_Planning_for_Collision_Avoidance_Maneuver
 https://www.hindawi.com/journals/jr/2016/9329131/
 https://robotics.stackexchange.com/questions/8555/which-trajectory-planning-algorithm-for-minimizing-jerk
+
+
+Hex to string conversion in C#
+
+string s = String.Concat(buffer.Select(b => b.ToString("X2")));
+
