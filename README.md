@@ -37,7 +37,9 @@ https://robotics.stackexchange.com/questions/8555/which-trajectory-planning-algo
 
 Hex to string conversion in C#
 
+```C#
 string s = String.Concat(buffer.Select(b => b.ToString("X2")));
+```
 
 Moving standar variance
 http://jonisalonen.com/2014/efficient-and-accurate-rolling-sta
