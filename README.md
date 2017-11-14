@@ -39,3 +39,25 @@ Hex to string conversion in C#
 
 string s = String.Concat(buffer.Select(b => b.ToString("X2")));
 
+Moving standar variance
+http://jonisalonen.com/2014/efficient-and-accurate-rolling-sta
+ndard-deviation/
+
+
+```Python
+class RollingStatistic(object):
+
+    def __init__(self, window_size, average, variance):
+        self.N = window_size
+        self.average = average
+        self.variance = variance
+        self.stddev = sqrt(variance)
+
+    def update(new, old):
+        oldavg = self.average
+        newavg = oldavg + (new - old)/self.N
+        self.average = newavg
+        self.variance += (new-old)*(new-newavg+old-oldavg)/(self.N-1)
+        self.stddev = sqrt(variance)
+
+```
