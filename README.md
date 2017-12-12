@@ -63,3 +63,14 @@ class RollingStatistic(object):
         self.stddev = sqrt(variance)
 
 ```
+
+Some conversions in C#
+
+```
+long lng = -9999999999L;
+byte[] test = Encoding.ASCII.GetBytes(lng.ToString());  // 11 byte
+byte[] test2 = BitConverter.GetBytes(lng);              // 8 byte
+byte[] mybyt = BitConverter.GetBytes(lng);              // 8 byte
+byte[] bA = BitConverter.GetBytes(lng);                 // 8 byte
+
+```
